@@ -90,7 +90,7 @@ function validation(form) {
           }
         }
         if (!(res === 2)) {
-          inputName.errorMessage ='The email address is not correct email address!';
+          inputName.errorMessage = 'The email address is not correct email address!';
 
           return false;
         }
