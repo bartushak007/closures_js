@@ -155,7 +155,7 @@ function comparePassword(password) {
       return true;
     } else {
       numberAttempts++;
-      if (numberAttempts === 5) {
+      if (numberAttempts >= 5) {
         return 'сообщение с предупреждением';
       }
 
@@ -241,7 +241,7 @@ function validation(form) {
       return true;
     },
     isPositive: function(item) {
-    return item === true;
+      return item === true;
     },
   };
 
